@@ -50,12 +50,18 @@ def draw_platforms():
         glEnd()
         glPopMatrix()
 
-# Piirrä pelaaja (kappale)
+# Piirrä pelaaja (kuutio)
 def draw_player():
     glPushMatrix()
     glTranslatef(player_pos[0], player_pos[1], player_pos[2])
+
+    # Pelaajan väri
     glColor3fv((0, 0, 1))  # Sininen väri pelaajalle
+
+    # Pelaaja (kuutio)
     glutSolidCube(player_size)
+    
+    # Päivitä pelaajan väri
     glPopMatrix()
 
 # Liikkuminen ja hyppääminen
@@ -111,4 +117,4 @@ def main():
 
 # Aloita peli
 main()
-![lataus (1)](https://github.com/user-attachments/assets/6b8f2f89-f726-4afb-8e7b-fdd4f16edd0b)
+
